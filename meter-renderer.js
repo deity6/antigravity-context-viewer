@@ -19416,10 +19416,10 @@
               <div style="display:flex;flex-direction:column;gap:8px;margin:8px 0;">
                 <label
                   style="font-size:11px;color:var(--ag-text-secondary);display:flex;flex-direction:column;gap:4px;">
-                  <span data-i18n="settings.proxy.urlLabel">本地代理地址 (例如 http://127.0.0.1:7897 或 socks5://...)：</span>
+                  <span data-i18n="settings.proxy.urlLabel">本地代理地址 (例如 http://127.0.0.1:7890 或 socks5://...)：</span>
                   <input id="input-proxy-url" type="text" class="unlock-input"
                     style="padding:4px 8px;font-size:11px;background:var(--ag-bg-subcard);border:1px solid var(--ag-border-subcard);color:var(--ag-text-primary);border-radius:4px;"
-                    value="http://127.0.0.1:7897" />
+                    value="http://127.0.0.1:7890" />
                 </label>
                 <label
                   style="font-size:11px;color:var(--ag-text-secondary);display:flex;flex-direction:column;gap:4px;">
@@ -21849,7 +21849,7 @@ const PANEL_I18N = {
   'settings.clientLang.sourceValue': { 'zh-CN': 'AntigravityChinese (开源社区贡献)', 'zh-TW': 'AntigravityChinese（開源社群貢獻）', en: 'AntigravityChinese (Community)' },
   'settings.proxy.title': { 'zh-CN': '🌐 免 TUN 网络直连与本地代理', 'zh-TW': '🌐 免 TUN 網路直連與本機代理', en: '🌐 TUN-free Local Proxy' },
   'settings.proxy.statusLabel': { 'zh-CN': '代理直连配置与状态', 'zh-TW': '代理直連設定與狀態', en: 'Proxy configuration & status' },
-  'settings.proxy.urlLabel': { 'zh-CN': '本地代理地址，如 http://127.0.0.1:7897：', 'zh-TW': '本機代理位址，如 http://127.0.0.1:7897：', en: 'Local proxy URL, e.g. http://127.0.0.1:7897:' },
+  'settings.proxy.urlLabel': { 'zh-CN': '本地代理地址，如 http://127.0.0.1:7890：', 'zh-TW': '本機代理位址，如 http://127.0.0.1:7890：', en: 'Local proxy URL, e.g. http://127.0.0.1:7890:' },
   'settings.proxy.bypassLabel': { 'zh-CN': '绕过代理列表 NO_PROXY：', 'zh-TW': '略過代理清單 NO_PROXY：', en: 'Bypass list NO_PROXY:' },
   'settings.proxy.testBtn': { 'zh-CN': '🔍 测试代理连通性', 'zh-TW': '🔍 測試代理連通性', en: '🔍 Test Proxy' },
   'settings.colors.title': { 'zh-CN': '🎨 指标与背景颜色自定义', 'zh-TW': '🎨 指標與背景顏色自訂', en: '🎨 Metric & Background Colors' },
@@ -55827,7 +55827,7 @@ const {
           <div class="ag-ns-row-desc" data-i18n="ns.proxyUrl.desc">填写本地 HTTP 或 SOCKS5 代理端口</div>
         </div>
         <div class="ag-ns-control ag-ns-control-pair">
-          <input type="text" id="ag-ns-input-proxyUrl" class="ag-ns-input" data-ag-ns-input="proxyUrl" placeholder="http://127.0.0.1:7897" autocomplete="off" spellcheck="false" />
+          <input type="text" id="ag-ns-input-proxyUrl" class="ag-ns-input" data-ag-ns-input="proxyUrl" placeholder="http://127.0.0.1:7890" autocomplete="off" spellcheck="false" />
           <button type="button" id="ag-ns-btn-test-proxy" class="ag-ns-btn" data-ag-ns-action="testProxy" data-i18n="ns.proxy.test">测试连通性</button>
           <button type="button" id="ag-ns-btn-apply-proxy" class="ag-ns-btn" data-ag-ns-action="applyProxy" data-i18n="ns.proxyUrl.apply">应用</button>
         </div>
@@ -71181,7 +71181,7 @@ if (typeof dismissNextPromptSuggestion === 'function') dismissNextPromptSuggesti
   }
 
   globalThis.__AGContextMeter = {
-    buildId: '7f5a53ceb5281e9c',
+    buildId: '323a115602a1d819',
     version: METER_RENDERER_VERSION,
     ensureAlive: () => {
       if (state.disposed) return false;

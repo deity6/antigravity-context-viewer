@@ -498,7 +498,7 @@ const PANEL_I18N = {
   'settings.clientLang.sourceValue': { 'zh-CN': 'AntigravityChinese (开源社区贡献)', 'zh-TW': 'AntigravityChinese（開源社群貢獻）', en: 'AntigravityChinese (Community)' },
   'settings.proxy.title': { 'zh-CN': '🌐 免 TUN 网络直连与本地代理', 'zh-TW': '🌐 免 TUN 網路直連與本機代理', en: '🌐 TUN-free Local Proxy' },
   'settings.proxy.statusLabel': { 'zh-CN': '代理直连配置与状态', 'zh-TW': '代理直連設定與狀態', en: 'Proxy configuration & status' },
-  'settings.proxy.urlLabel': { 'zh-CN': '本地代理地址，如 http://127.0.0.1:7897：', 'zh-TW': '本機代理位址，如 http://127.0.0.1:7897：', en: 'Local proxy URL, e.g. http://127.0.0.1:7897:' },
+  'settings.proxy.urlLabel': { 'zh-CN': '本地代理地址，如 http://127.0.0.1:7890：', 'zh-TW': '本機代理位址，如 http://127.0.0.1:7890：', en: 'Local proxy URL, e.g. http://127.0.0.1:7890:' },
   'settings.proxy.bypassLabel': { 'zh-CN': '绕过代理列表 NO_PROXY：', 'zh-TW': '略過代理清單 NO_PROXY：', en: 'Bypass list NO_PROXY:' },
   'settings.proxy.testBtn': { 'zh-CN': '🔍 测试代理连通性', 'zh-TW': '🔍 測試代理連通性', en: '🔍 Test Proxy' },
   'settings.colors.title': { 'zh-CN': '🎨 指标与背景颜色自定义', 'zh-TW': '🎨 指標與背景顏色自訂', en: '🎨 Metric & Background Colors' },

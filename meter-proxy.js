@@ -11,7 +11,7 @@ const DEFAULT_NO_PROXY = 'localhost,127.0.0.1,::1,127.0.0.0/8,10.0.0.0/8,192.168
  */
 function parseAndValidateProxyUrl(rawUrl) {
   if (!rawUrl || typeof rawUrl !== 'string' || !rawUrl.trim()) {
-    return { ok: false, error: '代理地址不能为空（示例：http://127.0.0.1:7897）' };
+    return { ok: false, error: '代理地址不能为空（示例：http://127.0.0.1:7890）' };
   }
   const trimmed = normalizeProxyUrl(rawUrl);
   try {
@@ -874,7 +874,7 @@ function buildHostProxyLaunchSpec(options = {}) {
     : (detected.httpProxy || '');
   const checked = parseAndValidateProxyUrl(rawUrl);
   if (!checked.ok) {
-    throw new Error(checked.error || '请提供有效的本地代理地址（例如 http://127.0.0.1:7897）');
+    throw new Error(checked.error || '请提供有效的本地代理地址（例如 http://127.0.0.1:7890）');
   }
   const proxyUrl = assertSingleLineSafe(checked.value, 'proxyUrl');
   const chromiumProxyUrl = proxyUrl.replace(/^socks5h:\/\//i, 'socks5://');

@@ -1566,7 +1566,7 @@ const {
           <div class="ag-ns-row-desc" data-i18n="ns.proxyUrl.desc">填写本地 HTTP 或 SOCKS5 代理端口</div>
         </div>
         <div class="ag-ns-control ag-ns-control-pair">
-          <input type="text" id="ag-ns-input-proxyUrl" class="ag-ns-input" data-ag-ns-input="proxyUrl" placeholder="http://127.0.0.1:7897" autocomplete="off" spellcheck="false" />
+          <input type="text" id="ag-ns-input-proxyUrl" class="ag-ns-input" data-ag-ns-input="proxyUrl" placeholder="http://127.0.0.1:7890" autocomplete="off" spellcheck="false" />
           <button type="button" id="ag-ns-btn-test-proxy" class="ag-ns-btn" data-ag-ns-action="testProxy" data-i18n="ns.proxy.test">测试连通性</button>
           <button type="button" id="ag-ns-btn-apply-proxy" class="ag-ns-btn" data-ag-ns-action="applyProxy" data-i18n="ns.proxyUrl.apply">应用</button>
         </div>

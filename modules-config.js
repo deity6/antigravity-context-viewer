@@ -79,7 +79,7 @@ const DEFAULT_CONFIG = {
     },
     proxy: {
       enabled: false,
-      proxyUrl: 'http://127.0.0.1:7897',
+      proxyUrl: 'http://127.0.0.1:7890',
       bypassList: 'localhost,127.0.0.1,::1,127.0.0.0/8,10.0.0.0/8,192.168.0.0/16,172.16.0.0/12,<local>',
       lastTestedAt: null
     },
@@ -170,7 +170,7 @@ function detectAndMigrateLegacyConfigs(options = {}) {
         if (raw.proxyUrl || raw.httpProxy) {
           legacyProxyFound = {
             enabled: raw.enabled === true,
-            proxyUrl: raw.proxyUrl || raw.httpProxy || 'http://127.0.0.1:7897',
+            proxyUrl: raw.proxyUrl || raw.httpProxy || 'http://127.0.0.1:7890',
             bypassList: raw.bypassList || raw.noProxy || DEFAULT_CONFIG.modules.proxy.bypassList,
             source: lp
           };
